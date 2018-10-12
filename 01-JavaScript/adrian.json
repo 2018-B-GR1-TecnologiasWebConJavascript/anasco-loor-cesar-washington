@@ -1,0 +1,9 @@
+{
+  "nombre": "Adrian",
+  "edad": 29,
+  "casado": null,
+  "tieneHijos": false,
+  "mascotas": {
+    "nombre" : "Chubaca"
+  }
+}
