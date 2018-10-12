@@ -50,7 +50,7 @@ console.log(adrian.hija.nombre)
 
 // IF & ELSE
 
-if (true){
+if (true){ //Thruty
     console.log("Si")
 } else {
     console.log("No")
