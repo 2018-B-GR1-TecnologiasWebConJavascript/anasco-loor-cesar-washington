@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5644140-e5f7-4610-848e-d6a25d21f3c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/01-JavaScript/02-arreglos.js" beforeDir="false" afterPath="$PROJECT_DIR$/01-JavaScript/02-arreglos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-JavaScript/03-funciones.js" beforeDir="false" afterPath="$PROJECT_DIR$/01-JavaScript/03-funciones.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,7 +44,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="2784" />
+          <entry key="js" value="3962" />
           <entry key="json" value="188" />
           <entry key="md" value="22" />
           <entry key="txt" value="9" />
@@ -53,7 +53,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="188" />
-          <entry key="JavaScript" value="2784" />
+          <entry key="JavaScript" value="3962" />
           <entry key="PLAIN_TEXT" value="31" />
         </counts>
       </usages-collector>
@@ -70,27 +70,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-JavaScript/02-arreglos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="804">
-              <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+            <state relative-caret-position="623">
+              <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="1184" column="4" selection-start-line="1184" selection-start-column="4" selection-end-line="1184" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/01-JavaScript/03-funciones.js">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="834">
+              <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -106,6 +101,7 @@
         <option value="$PROJECT_DIR$/01-JavaScript/adrian.json" />
         <option value="$PROJECT_DIR$/01-JavaScript/01-variables.js" />
         <option value="$PROJECT_DIR$/01-JavaScript/02-arreglos.js" />
+        <option value="$PROJECT_DIR$/01-JavaScript/03-funciones.js" />
       </list>
     </option>
   </component>
@@ -183,7 +179,7 @@
       <option name="presentableId" value="Default" />
       <updated>1538776183182</updated>
       <workItem from="1538776218148" duration="520000" />
-      <workItem from="1539637574567" duration="3085000" />
+      <workItem from="1539637574567" duration="4910000" />
     </task>
     <task id="LOCAL-00001" summary="Crear git">
       <created>1538776651438</created>
@@ -196,7 +192,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7630000" />
+    <option name="totallyTimeSpent" value="9455000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1282" y="0" width="1278" height="1440" extended-state="0" />
@@ -277,13 +273,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01-JavaScript/03-funciones.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/01-JavaScript/02-arreglos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="804">
-          <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+        <state relative-caret-position="623">
+          <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-JavaScript/03-funciones.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="834">
+          <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
         </state>
       </provider>
     </entry>
