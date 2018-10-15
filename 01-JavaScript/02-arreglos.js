@@ -67,8 +67,33 @@ console.log(arregloTotal);
 //console.log(arregloDos);
 //console.log(indiceSiete);
 
+//Destructuracion de objetos
 
+var vicente = {
+    nombre:"Vicente",
+    apellidoPaterno: "Eguez"
+};
 
+var eguez = {
+    sueldo: 1.10
+};
+
+var adrian = {
+    edad: 10,
+    casado: false,
+    hijos: null,
+    mascota: {
+        nombre: "Cachetes"
+    }
+} ;
+
+var vicenteAdrianEguez = {
+    ...vicente,
+    ...adrian,
+    ...eguez
+};
+
+console.log(vicenteAdrianEguez);
 
 
 

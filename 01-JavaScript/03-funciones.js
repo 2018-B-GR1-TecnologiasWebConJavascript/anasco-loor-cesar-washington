@@ -28,9 +28,23 @@ console.log(sumarDosNumeros(1,2,3,4,5));
 
 console.log(sumarDosNumeros(true ,0, [],3,4,5));
 
-//Los parametros que llegan a las funciones llegan como arreglos
-function sumarNNumeros(...numeros) {
+/*Los parametros que llegan a las funciones llegan como arreglos
 
+function sumarNNumeros(...numeros) {//Destructuracion de argumentos
+
+    var resultado = calcularResultadoSumarNNumeros(numeros);
+
+    if (resultado.esValido){
+        return resultado.suma;
+    } else {
+        return 0;
+    }
+
+    //console.log(numeros);
+}
+
+
+function calcularResultadoSumarNNumeros (numeros) {
     var suma = 0;
     var todosLosNumerosSonValidos = true;
 
@@ -43,16 +57,33 @@ function sumarNNumeros(...numeros) {
             break;
         }
     }
-
-    if (todosLosNumerosSonValidos){
-        return suma;
-    } else {
-        return 0;
-    }
-
-    //console.log(numeros);
 }
 
+console.log(sumarNNumeros(true,1,2,3));
 
-console.log(sumarNNumeros(1,2,3));
+*/
 
+
+//Javascript permite mandar funciones como parametros
+function saludar(nombre, funcion) {
+    //funcion();
+    return `Hola ${funcion(nombre)}`;
+}
+
+console.log(saludar("aDrIaN", holaMundo)); //definicion de una funcion, sin ()
+
+console.log(saludar("AdRian", nombreEnMayusculas));
+console.log(saludar("AdRian", nombreEnMinusculas));
+console.log(saludar("AdRian", nombreConPuntoAlFinal));
+
+function nombreEnMayusculas(nombre) {
+    return nombre.toUpperCase();
+}
+
+function nombreEnMinusculas(nombre) {
+    return nombre.toLowerCase();
+}
+
+function nombreConPuntoAlFinal(nombre) {
+    return nombre + ".";
+}
