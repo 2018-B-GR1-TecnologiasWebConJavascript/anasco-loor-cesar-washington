@@ -3,6 +3,9 @@ var arreglo = [];
 
 var arregloNumeros = [1, 2, 3];
 
+//acceso
+console.log(arreglo[3]);
+
 arregloNumeros.push(4);
 
 console.log(arregloNumeros);
@@ -12,11 +15,13 @@ arregloNumeros.pop();
 console.log(arregloNumeros);
 
 
-//splice remueve elementos de un arreglo
+//splice borrar
 
 arregloNumeros.splice(0,2);
 
 console.log(arregloNumeros);
+
+//splice agregar
 
 //Primer difito posicion
 //
@@ -35,11 +40,33 @@ arregloNumeros.splice(indiceNumeroSeis,1);
 console.log(arregloNumeros);
 
 //Para dividir arreglos
-// [0,10] Cerradp esta incluido el 10
-//
+// [0,10] Cerrado esta incluido el 10
+// [0,10[ Abierto esta excuido el 10
 
 var arregloUno = arregloNumeros.slice(0,2);
-console.log(arregloUno);
+var arregloDos = arregloNumeros.slice(3,6);
+
+var arregloUnoDos = [1, 2];
+var arregloSeis = [6];
+
+//Destructuracion de arreglos,
+var arregloTotal = [];
+console.log(...arregloUnoDos);
+console.log(1, 2);
+var arregloTotal = [...arregloUnoDos, ...arregloUno, ...arregloSeis, ...arregloDos];
+console.log(arregloTotal);
+
+var arregloSiguientesNumeros = [10,11,12,14,15,16,17,18,19];
+
+arregloTotal.splice(arregloTotal.length,0, ...arregloSiguientesNumeros);
+console.log(arregloTotal);
+//arregloDos.push(7);
+//var indiceSiete = arregloDos.indexOf(7);
+
+//console.log(arregloUno);
+//console.log(arregloDos);
+//console.log(indiceSiete);
+
 
 
 
