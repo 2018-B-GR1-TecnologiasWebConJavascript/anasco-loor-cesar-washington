@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5644140-e5f7-4610-848e-d6a25d21f3c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/01-JavaScript/04-Operadores.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-JavaScript/03-funciones.js" beforeDir="false" afterPath="$PROJECT_DIR$/01-JavaScript/03-funciones.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-JavaScript/04-Operadores.js" beforeDir="false" afterPath="$PROJECT_DIR$/01-JavaScript/04-Operadores.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,7 +48,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="9030" />
+          <entry key="js" value="9063" />
           <entry key="json" value="188" />
           <entry key="md" value="22" />
           <entry key="txt" value="9" />
@@ -59,7 +57,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="188" />
-          <entry key="JavaScript" value="9030" />
+          <entry key="JavaScript" value="9063" />
           <entry key="PLAIN_TEXT" value="31" />
         </counts>
       </usages-collector>
@@ -97,8 +95,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/01-JavaScript/04-Operadores.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="89" column="26" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
+            <state relative-caret-position="476">
+              <caret line="72" column="8" lean-forward="true" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -197,7 +195,7 @@
       <updated>1538776183182</updated>
       <workItem from="1538776218148" duration="520000" />
       <workItem from="1539637574567" duration="6775000" />
-      <workItem from="1540242550358" duration="6435000" />
+      <workItem from="1540242550358" duration="6567000" />
     </task>
     <task id="LOCAL-00001" summary="Crear git">
       <created>1538776651438</created>
@@ -210,7 +208,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17755000" />
+    <option name="totallyTimeSpent" value="17887000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1282" y="0" width="1278" height="1440" extended-state="0" />
@@ -303,8 +301,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01-JavaScript/04-Operadores.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="89" column="26" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
+        <state relative-caret-position="476">
+          <caret line="72" column="8" lean-forward="true" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
         </state>
       </provider>
     </entry>

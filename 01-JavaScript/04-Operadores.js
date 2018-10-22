@@ -87,7 +87,8 @@ const  respuestaReduce = arregloNumeros
     );
 
 const  respuestaReduceV2 = arregloNumeros
-    .reduce((a,b) => a - b, 100);
+    .reduce((a,b) => a - b, 100);   // acumulado - valor actual
+
 
 console.log(respuestaReduce);
 console.log(respuestaReduceV2);
