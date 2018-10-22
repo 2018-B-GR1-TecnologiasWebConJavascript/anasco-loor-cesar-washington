@@ -87,3 +87,106 @@ function nombreEnMinusculas(nombre) {
 function nombreConPuntoAlFinal(nombre) {
     return nombre + ".";
 }
+
+function restar(a,b) {
+    return a - b;
+}
+
+console.log(restar(4,2));   // Ejecucion undefined
+console.log(typeof restar); // Tipo Funcion
+console.log(restar);        // Definicion de la funcion
+
+//ANONYMOUS FUNCTION
+
+function nombre() {}
+
+//Funcion anonima dentro de una variable
+var ejemplo = function (){}
+
+//Igualar a una propiedad de un objeto
+var adrian = {trabajo:function (){
+    //Implementacion
+    }}
+
+adrian.trabajo()
+
+// Usar dentro de arreglos
+var arreglo = [ function () {
+    //implementacion
+}]
+
+arreglo [0]();
+
+//Enviar directamente la funcion como parametro
+saludar("Maria", function (nombre) {
+    return nombre + "Eguez";
+});
+
+//TIPOS DE VARIABLES
+
+var variable; //Nunca mas
+
+
+let variablesDos = 2;
+variablesDos = 3; // = ... Puede ser igalada a otra cosa
+
+const edad = 29; //Siempre que se pueda usar esta, amenos que se necesite de una reasignacion
+// edad = 30;
+
+const vicente = {
+    nombre:'Vicente'
+}
+
+vicente.nombre = 'Washo';
+vicente.isPrototypeOf();
+vicente.hasOwnProperty();
+/*vicente = {
+    algo:mas
+}*/
+
+//Si se puede usar funciones en la variable de tipo contaste
+const
+    arregloUnoDos =[1,2];
+
+arregloUnoDos[0] = 3;
+arregloUnoDos.push(3);
+
+
+//arregloUnoDos = [1,2,3,4];
+
+const nombre = 'Adrian';
+//nombre = 'Vicente';
+
+const casado = true;
+// casado = false;
+
+const hijos = null;
+// hijos = 1;
+
+const ganarDinero = function () {
+    return 1;
+}
+
+/* ganarDinero() = function () {
+    return 2;
+} */
+
+// NUNCA VAMOS A USAR LAS FUNCIONES ANONIMAS
+
+const elevarAlCuadrado = function (numero) {
+    return numero * numero;
+}
+
+// FAT ARROW FUNCTION  ->   =>
+
+const elevarAlCuadrado = (numero) => {
+    return numero * numero;
+}
+
+// Si se tiene una sola linea se puede omitir las llaves, return y parentesis.
+
+const elevarAlCuadradoV2 = (numero) => numero * numero;
+
+const elevarAlCuadradoV3 = numero => numero * numero;
+
+const restarDosNumeros = (numUno,numDos) => numUno - numDos;
