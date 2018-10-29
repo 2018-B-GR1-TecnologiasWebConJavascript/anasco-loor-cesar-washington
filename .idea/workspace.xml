@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5644140-e5f7-4610-848e-d6a25d21f3c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/01-JavaScript/05-callbacks/01-modules/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-JavaScript/05-callbacks/01-modules/calculadora-simple.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-JavaScript/05-callbacks/01-modules/numero-procesadores.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-JavaScript/05-callbacks/01-modules/version-node/version-node.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-JavaScript/05-callbacks/01-modules/version.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-JavaScript/05-callbacks/02-fs/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-JavaScript/05-callbacks/02-fs/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-JavaScript/05-callbacks/02-fs/ejemplo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-JavaScript/06-callback-propio.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-JavaScript/05-callbacks/02-fs/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/01-JavaScript/05-callbacks/02-fs/app.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,15 +28,16 @@
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="dosArreglos" value="1" />
           <entry key="gitignore" value="2" />
-          <entry key="js" value="12" />
+          <entry key="js" value="13" />
           <entry key="json" value="3" />
           <entry key="md" value="2" />
           <entry key="tresFunciones" value="1" />
@@ -53,7 +48,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="12" />
+          <entry key="JavaScript" value="13" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="TypeScript" value="1" />
         </counts>
@@ -61,7 +56,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="18" />
-          <entry key="js" value="10795" />
+          <entry key="js" value="11866" />
           <entry key="json" value="191" />
           <entry key="md" value="22" />
           <entry key="txt" value="16" />
@@ -70,7 +65,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="191" />
-          <entry key="JavaScript" value="10795" />
+          <entry key="JavaScript" value="11866" />
           <entry key="PLAIN_TEXT" value="56" />
         </counts>
       </usages-collector>
@@ -78,15 +73,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-JavaScript/03-funciones.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2880">
-              <caret line="192" selection-start-line="192" selection-end-line="192" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-JavaScript/04-Operadores.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -132,11 +118,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-JavaScript/05-callbacks/02-fs/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="600">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/01-JavaScript/06-callback-propio.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="614">
+              <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -199,6 +194,7 @@
         <option value="$PROJECT_DIR$/01-JavaScript/05-callbacks/02-fs/.gitignore" />
         <option value="$PROJECT_DIR$/01-JavaScript/05-callbacks/02-fs/ejemplo.txt" />
         <option value="$PROJECT_DIR$/01-JavaScript/05-callbacks/02-fs/app.js" />
+        <option value="$PROJECT_DIR$/01-JavaScript/06-callback-propio.js" />
       </list>
     </option>
   </component>
@@ -270,6 +266,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -299,7 +296,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -347,6 +343,7 @@
       <workItem from="1540590400033" duration="14000" />
       <workItem from="1540590419569" duration="3017000" />
       <workItem from="1540593473796" duration="741000" />
+      <workItem from="1540847672249" duration="1720000" />
     </task>
     <task id="LOCAL-00001" summary="Crear git">
       <created>1538776651438</created>
@@ -359,13 +356,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23743000" />
+    <option name="totallyTimeSpent" value="25463000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1282" y="0" width="1278" height="1440" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19331743" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20525059" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -487,6 +484,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/01-JavaScript/05-callbacks/02-fs/ejemplo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/01-JavaScript/05-callbacks/02-fs/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -501,17 +505,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01-JavaScript/05-callbacks/02-fs/ejemplo.txt">
+    <entry file="file://$PROJECT_DIR$/01-JavaScript/05-callbacks/02-fs/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" selection-start-column="4" selection-end-column="4" />
+        <state relative-caret-position="600">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01-JavaScript/05-callbacks/02-fs/app.js">
+    <entry file="file://$PROJECT_DIR$/01-JavaScript/06-callback-propio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="614">
+          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
         </state>
       </provider>
     </entry>
