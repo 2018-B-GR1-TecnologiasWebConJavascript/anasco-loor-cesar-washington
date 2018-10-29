@@ -4,42 +4,40 @@ const fs = require('fs');
 let contenidoFinal = 'Inicial';
 
 
-function appendFiles(nombreArchivo, contenido) {
+function appendFile(nombreArchivo, contenido, callback) {
     // 1) Leer archivo
-    // 2.1) Si existe, le añado el contenido al contenido del archivo
+    // 2.1) Si existe, le anado el contenido al contenido
+    //      del archivo
     // 2.2) Si no existe, le creo al archivo con el contenido
 
-    // ** Devuelvan el contenido completo del archivo
-
+    // **Devuelvan el contenido completo del archivo**
     fs.readFile(
         nombreArchivo,
         'utf-8',
         (error, contenidoLeidoDelArchivo) => {
             if (error) {
-                // escribimos el archivo
                 fs.writeFile(
                     nombreArchivo,
                     contenido,
-                    (error) => {
+                    (err) => {
                         if (err) {
-                        console.log('Error Escribiendo');
-                                 } else{
-                            callback(contenido)
+                            callback(undefined, err)
+                        } else {
+                            // Devolver el contenido
+                            callback(contenido);
                         }
                     }
-                )
-            } else{
-                // añadimos el contenido del archivo
-                // leido al contenido a escribir en el archivo
+                );
+            } else {
 
                 fs.writeFile(
-                    nombreArchivoç,
+                    nombreArchivo,
                     contenidoLeidoDelArchivo + contenido,
                     (err) => {
                         if (err) {
-                            console.log('Error escribiendo');
+                            callback(undefined, err);
                         } else {
-                            //Devover el contenido
+                            // Devolver el contenido
                             callback(contenidoLeidoDelArchivo + contenido)
                         }
                     }
@@ -47,15 +45,76 @@ function appendFiles(nombreArchivo, contenido) {
             }
         }
     );
-
 }
 
-function appendFile() {
 
+//el callback propio sirve para devolver
+
+appendFile(
+    '06-ejemplo.txt',
+    '\nHola amigos',
+    (contenido, err) => {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log(contenido);
+        }
+    }
+);
+
+
+
+/*
+
+// ['A','B','C']
+
+//  0-A,txt       'A'
+//  1-B.txt       'B'
+//  2-C.txt       'C'
+
+const respuesta = {
+    nombreArchivo: '',
+    contenidoArchivo: '',
+    error: '',
+};
+
+[respuesta, respuesta, respuesta, respuesta]
+
+function ejercicio(arregloStrings, callback) {
+
+    const  respuesta = [];
+
+    arregloStrings
+        .forEach(
+            (string, indice)=>{
+                const nombreArchivo = `${indice}-${string}.txt;`
+                const contenido = string;
+
+                fs.writefila(
+                    nombreArchivo,
+                    contenido,
+                    (err) => {
+                       const respuesta = {
+                           nombreArchivo: nombreArchivo,
+                           contenidoArchivo: contenido,
+                           error: err,
+                       };
+                       respuestas.push(respuesta);
+
+                       const estaCompletoElArreglo = respuestas.length ===
+                           if(estaCompletoElArreglo){
+                               callback(respuestas);
+                           }
+                    }
+                )
+            })
 }
 
-const respuestaAppendFile = appendFiles('06-ejemplo.txt', 'Hola amigos');
+ejercicio(
+    ['A','B','C'],
+    (respuestaEjercicio) => {
+        console.log(respuestaEjercicio);
+    }
+)
 
-appendFiles('06-ejemplo.txt','Hola amigos');
-
-console.log(contenidoFinal);
+*/
