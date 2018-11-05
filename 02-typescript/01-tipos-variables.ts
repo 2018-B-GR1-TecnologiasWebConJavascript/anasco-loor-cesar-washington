@@ -49,8 +49,8 @@ function saludar(
 }
 
 //Casteo de datos
-//let respuestSaludar = <string> saludar(nombre:'',apellido='',otrosNombres='','','');
-//respuestaSaludar = 1:
+let respuestSaludar = <string> saludar('Vicente', 'Eguez','','','')
+respuestaSaludar = 1:
 
 console.log();
 
