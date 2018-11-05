@@ -147,7 +147,7 @@ const respuesta2 = {
 
 //[respuesta, respuesta, respuesta]
 
-const ejercicioPromesa = (arregloStrings) => {
+const promesaEjercicio = (arregloStrings) => {
     const respuestas = [];
     return new Promise(
         (resolve) => {
@@ -178,7 +178,7 @@ const ejercicioPromesa = (arregloStrings) => {
     )
 };
 
-ejercicioPromesa(['D', 'E', 'F'])
+promesaEjercicio(['D', 'E', 'F'])
     .then(
         (respuestaEjercicio) => {
             console.log(respuestaEjercicio)

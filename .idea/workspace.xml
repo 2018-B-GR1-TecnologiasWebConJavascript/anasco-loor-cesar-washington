@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5644140-e5f7-4610-848e-d6a25d21f3c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/01-JavaScript/07-ejemplo3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-JavaScript/07-ejemplo2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/01-JavaScript/07-ejemplo2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/01-JavaScript/07-promesas.js" beforeDir="false" afterPath="$PROJECT_DIR$/01-JavaScript/07-promesas.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -81,7 +78,7 @@
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="123" />
+          <entry key="JavaScript" value="163" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -92,7 +89,7 @@
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="123" />
+          <entry key="js" value="163" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -107,7 +104,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-JavaScript/06-callback-propio.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1039">
+            <state relative-caret-position="686">
               <caret line="119" column="2" lean-forward="true" selection-start-line="119" selection-start-column="2" selection-end-line="119" selection-end-column="2" />
             </state>
           </provider>
@@ -125,8 +122,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/01-JavaScript/07-promesas.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
+            <state relative-caret-position="328">
+              <caret line="185" column="6" lean-forward="true" selection-start-line="185" selection-start-column="6" selection-end-line="185" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -339,7 +336,7 @@
       <workItem from="1540590419569" duration="3017000" />
       <workItem from="1540593473796" duration="741000" />
       <workItem from="1540847672249" duration="6516000" />
-      <workItem from="1541387393384" duration="3228000" />
+      <workItem from="1541387393384" duration="3440000" />
     </task>
     <task id="LOCAL-00001" summary="Crear git">
       <created>1538776651438</created>
@@ -352,13 +349,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33487000" />
+    <option name="totallyTimeSpent" value="33699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="622" y="0" width="658" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22919936" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22919936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -370,7 +367,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.34246576" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.34246576" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -538,15 +535,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01-JavaScript/06-callback-propio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1039">
+        <state relative-caret-position="686">
           <caret line="119" column="2" lean-forward="true" selection-start-line="119" selection-start-column="2" selection-end-line="119" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/01-JavaScript/07-promesas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
+        <state relative-caret-position="328">
+          <caret line="185" column="6" lean-forward="true" selection-start-line="185" selection-start-column="6" selection-end-line="185" selection-end-column="6" />
         </state>
       </provider>
     </entry>
