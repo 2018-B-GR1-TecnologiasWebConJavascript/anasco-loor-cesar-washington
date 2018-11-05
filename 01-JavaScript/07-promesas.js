@@ -30,17 +30,17 @@ const nuevaPromesaEscritura = (nombreArchivo, contenidoArchivo) => {
                 nombreArchivo,
                 contenidoArchivo,
                 (err) => {
-                    if (err, contenidoLeidoDelArchivo){
+                    if (err) {
                         reject(err);
                     } else {
-                        resolve(contenidoLeidoDelArchivo);
+                        resolve(contenidoArchivo);
                     }
+
                 }
             )
         }
-    );
-
-}
+    )
+};
 
 nuevaPromesa(nombre)
     .then(
@@ -63,7 +63,6 @@ nuevaPromesa(nombre)
 
 
 
-
 // FUNCION APPEND FILE EN PROMESA
 
 const promesaAppend = (nombreArchivo, contenido) => {
@@ -75,7 +74,11 @@ const promesaAppend = (nombreArchivo, contenido) => {
         // 2.2) Si no existe, le creo al archivo con el contenido
 
         // **Devuelvan el contenido completo del archivo**
-        fs.readFile(
+    return new Promise(
+        (resolve, reject) => {
+
+
+    fs.readFile(
             nombreArchivo,
             'utf-8',
             (error, contenidoLeidoDelArchivo) => {
@@ -107,12 +110,16 @@ const promesaAppend = (nombreArchivo, contenido) => {
                         }
                     )
                 }
+
             }
         );
 
-}
+        }
+    );
 
-promesaAppend(nombre)
+};
+
+promesaAppend('07-ejemplo3.txt',nombre)
     .then(
         (contenido) => {
             console.log('Ok', contenido);
@@ -125,5 +132,55 @@ promesaAppend(nombre)
     )
 
 
+// FUNCION DEBER
+//  ['D', 'E', 'F']
 
+//0-D.txt 'D'
+//1-E.txt 'E'
+//2-F.txt 'F'
 
+const respuesta2 = {
+    nombreArchivo: '',
+    contenidoArchivo: '',
+    error: '',
+};
+
+//[respuesta, respuesta, respuesta]
+
+const ejercicioPromesa = (arregloStrings) => {
+    const respuestas = [];
+    return new Promise(
+        (resolve) => {
+            arregloStrings
+                .forEach(
+                    (string, indice) => {
+                        const contenido = string;
+                        const nombreArchivo = `${indice}-${contenido}.txt`;
+                        fs.writeFile(
+                            nombreArchivo,
+                            contenido,
+                            (err) => {
+                                const respuesta = {
+                                    nombreArchivo: nombreArchivo,
+                                    contenidoArchivo: contenido,
+                                    error: err,
+                                };
+                                respuestas.push(respuesta);
+                                const estaCompletoElArreglo = respuestas.length === arregloStrings.length;
+                                if (estaCompletoElArreglo) {
+                                    resolve(respuestas);
+                                }
+                            }
+                        )
+                    }
+                )
+        }
+    )
+};
+
+ejercicioPromesa(['D', 'E', 'F'])
+    .then(
+        (respuestaEjercicio) => {
+            console.log(respuestaEjercicio)
+        }
+    );
