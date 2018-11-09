@@ -281,7 +281,7 @@
       <path value="$PROJECT_DIR$/01-JavaScript/05-callbacks/02-fs/node_modules/vary/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="693" />
     <option name="y" value="234" />
     <option name="width" value="1867" />
