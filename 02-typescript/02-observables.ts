@@ -1,15 +1,36 @@
 // 01-Observables.ts
 
+
+//import {pipe} from "rxjs";
+
 declare var require: any;
 const rxjs = require('rxjs');
+const map = require('rxjs/operators').map;
 
-const numeros$ = rxjs.of(1,2,3,4,5,6);
+
+const numeros$ = rxjs.of(
+    1,
+    "Adrian",
+    true,
+    {nombre: 'Adrian'},
+    [1,2,3],
+    new Date()
+);
 
 console.log(numeros$);
 
 
 
-numeros$.subscribe(
+numeros$
+    .pipe(
+        map(
+            ()=> {
+                return false;
+            }
+        )
+
+    )
+    .subscribe(
     (ok)=> {
         console.log('En ok', ok)
     },
