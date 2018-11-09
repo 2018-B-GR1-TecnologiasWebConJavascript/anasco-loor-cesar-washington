@@ -18,9 +18,11 @@ const promesita = (correcto) => {
     });
 };
 const promesita$ = rxjs.from(promesita(true));
+const promesitaNoOk$ = rxjs.from(promesita(false));
 numeros$
-    .pipe(concat(promesita$))
-    .pipe(distinct(), map((valorActual) => {
+    .pipe(concat(promesitaNoOk$), //REJECT
+concat(promesita$), //RESOLVE
+distinct(), map((valorActual) => {
     return {
         data: valorActual
     };
