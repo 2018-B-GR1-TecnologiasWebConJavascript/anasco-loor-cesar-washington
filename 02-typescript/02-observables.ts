@@ -1,4 +1,4 @@
-// 01-Observables.ts
+// 02∫-Observables.ts
 
 
 //import {pipe} from "rxjs";
@@ -6,8 +6,8 @@
 declare var require: any;
 const rxjs = require('rxjs');
 const map = require('rxjs/operators').map;
-const distinct = require('rxjs/operators').distinct();
-
+const distinct = require('rxjs/operators').distinct;
+const concat = require('rxjs/operators').concat;
 
 const numeros$ = rxjs.of(
     1,
@@ -20,13 +20,30 @@ const numeros$ = rxjs.of(
     [1,2,3],
     1,
     new Date()
+    // ':)' CONCAT
 );
 
 console.log(numeros$);
 
+const promesita =  (correcto) => {
+    return new Promise(
+        (resolve,reject)=>{
+            if(correcto) {
+                resolve(':)');
+            } else {
+                reject(':c');
+            }
+        }
+    );
+};
+
+const  promesita$  = rxjs.from(promesita(true));
 
 
 numeros$
+    .pipe(
+        concat(promesita$)
+    )
     .pipe(
         distinct(),
         map(
@@ -47,4 +64,22 @@ numeros$
     },
     ()=>{
         console.log('Completado');
-    })
+    });
+
+
+
+promesita$
+    .subscribe(
+        (ok)=>{
+            console.log('En promesita',ok)
+        },
+        (error)=>{
+            console.log('Error en promesita', error)
+        },
+        ()=>{
+            console.log('Completado')
+        }
+
+    )
+
+
