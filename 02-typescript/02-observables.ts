@@ -23,7 +23,7 @@ const numeros$ = rxjs.of(
     // ':)' CONCAT
 );
 
-console.log(numeros$);
+console.log(numeros$);tall
 
 const promesita =  (correcto) => {
     return new Promise(
