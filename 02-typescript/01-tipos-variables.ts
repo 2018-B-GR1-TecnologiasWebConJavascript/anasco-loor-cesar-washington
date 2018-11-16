@@ -50,7 +50,7 @@ function saludar(
 
 //Casteo de datos
 let respuestSaludar = <string> saludar('Vicente', 'Eguez','','','')
-respuestaSaludar = 1:
+//respuestaSaludar = 1;
 
 console.log();
 
