@@ -4,6 +4,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const rxjs = require('rxjs');
+const mergeMap = require('rxjs/operators').mergeMap;
 const menus = require('./Menus');
 const funciones = require('./Funciones');
 const bdd = require('./bdd.json');
@@ -129,3 +130,105 @@ function inicializarBase() {
 }
 ;
 usuarioAdmin();
+
+
+// EJEMPLO DE OBSERVABLE DEL CODIGO
+
+function leerBDD() {
+    new Promise(
+        (resolve) => {
+            fs.readFile(
+                'bdd.json',
+                'utf-8',
+                (error, contenidoArchivo) => {
+                    if(error){
+                        resolve({mensaje:'No existe la base de datos',
+                        bdd:null})
+                    } else {
+                        resolve ({ mensaje: 'Base de datos leida',
+                        bdd:JSON.parse(contenidoArchivo)})
+                    }
+                }
+            )
+        }
+    )
+}
+
+function crearBDD() {
+    const contenido = '{"usuarios":[],"mascotas":[]}';
+    return new Promise(
+        (resolve, reject) => {
+            fs.writeFile(
+                'bdd.json',
+                contenido,
+                (error) => {
+                    if (error) {
+                        reject({
+                            mensaje: 'Error creando bdd',
+                            error: 500
+                        });
+                    } else {
+                        resolve({
+                            mensaje: 'BDD creada',
+                            bdd: JSON.parse(contenido)
+                        });
+                    }
+                }
+            );
+        }
+    );
+}
+
+
+function inicializarBDD():Observable<>{
+    const bddLeida$ = rxjs.from(leerBDD());
+
+    bddLeida$
+        .pipe(
+            mergeMap(
+                ()=>{
+
+                }
+            )
+        )
+}
+
+function main() {
+    console.log('Empezo');
+
+    // 1) Si existe el archivo, leer sino crear.
+
+
+    // 2) Preginto que quiere hacer -> Crear
+
+
+    // 3) Preguntat los datos -> Datos nuevo registro
+
+
+    // 4) Accion!
+
+
+    // 5) Guardar la Base de Datos
+
+
+    //
+
+}
+
+interface respuestaBDD{
+
+}
+
+export interface BaseDeDatos{
+    usuarios:Usuario[];
+    mascotas:Mascota[];
+}
+
+interface Usuario{
+    id: number;
+    nombre: string;
+}
+interface Mascota{
+    id: Number;
+    nombre: string;
+}

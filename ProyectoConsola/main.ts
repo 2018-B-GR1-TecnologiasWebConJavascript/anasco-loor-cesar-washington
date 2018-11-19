@@ -125,7 +125,7 @@ async function usuarioAdmin() {
     }
 };
 
-
+//Para crear el archivo json
 
 function inicializarBase() {
     return new Promise(
