@@ -19,6 +19,9 @@ const promesita = (correcto) => {
 };
 const promesita$ = rxjs.from(promesita(true));
 const promesitaNoOk$ = rxjs.from(promesita(false));
+
+
+
 numeros$
     .pipe(concat(promesitaNoOk$), //REJECT
 concat(promesita$), //RESOLVE
