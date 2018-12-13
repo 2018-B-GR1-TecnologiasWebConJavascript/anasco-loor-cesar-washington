@@ -1,0 +1,69 @@
+{
+  "usuarios": [
+    {
+      "id": "101",
+      "nombre": "Cesar",
+      "tipo": "Administrador"
+    },
+    {
+      "id": "102",
+      "nombre": "Cesar",
+      "tipo": "Administrador"
+    },
+    {
+      "id": "103",
+      "nombre": "Pepe",
+      "tipo": "Participante"
+    }
+  ],
+  "mascotas": [
+    {
+      "id": "1",
+      "nombre": "Firulais",
+      "estado": {
+        "nombreEstado": "En Adopcion",
+        "idAdoptor": ""
+      }
+    },
+    {
+      "id": "2",
+      "nombre": "Chuleta",
+      "estado": {
+        "nombreEstado": "En Adopcion",
+        "idAdoptor": ""
+      }
+    },
+    {
+      "id": "3",
+      "nombre": "Firo",
+      "estado": {
+        "nombreEstado": "En Adopcion",
+        "idAdoptor": ""
+      }
+    },
+    {
+      "id": "4",
+      "nombre": "fercho",
+      "estado": {
+        "nombreEstado": "En Adopcion",
+        "idAdoptor": ""
+      }
+    },
+    {
+      "id": "5",
+      "nombre": "Deris",
+      "estado": {
+        "nombreEstado": "En Adopcion",
+        "idAdoptor": ""
+      }
+    },
+    {
+      "id": "6",
+      "nombre": "gh",
+      "estado": {
+        "nombreEstado": "En Adopcion",
+        "idAdoptor": ""
+      }
+    }
+  ]
+}
