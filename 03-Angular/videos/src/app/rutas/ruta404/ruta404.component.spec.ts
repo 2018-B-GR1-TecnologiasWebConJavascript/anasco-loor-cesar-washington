@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RutaP404Component } from './ruta-p404.component';
+import { Ruta404Component } from './ruta404.component';
 
-describe('RutaP404Component', () => {
-  let component: RutaP404Component;
-  let fixture: ComponentFixture<RutaP404Component>;
+describe('Ruta404Component', () => {
+  let component: Ruta404Component;
+  let fixture: ComponentFixture<Ruta404Component>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RutaP404Component ]
+      declarations: [ Ruta404Component ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RutaP404Component);
+    fixture = TestBed.createComponent(Ruta404Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
