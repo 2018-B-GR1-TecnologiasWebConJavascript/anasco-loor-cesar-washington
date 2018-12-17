@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="91c11d4a-96a0-401c-9596-873fc8f78953" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04-Backend/video-backend/config/local.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-Backend/video-backend./api/controllers/ModelController.js" beforeDir="false" afterPath="$PROJECT_DIR$/04-Backend/video-backend./api/controllers/RazaController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-Backend/video-backend./config/datastores.js" beforeDir="false" afterPath="$PROJECT_DIR$/04-Backend/video-backend./config/datastores.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-Backend/video-backend./config/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/04-Backend/video-backend./config/routes.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/03-Angular/videos/node_modules/" />
     <ignored path="$PROJECT_DIR$/ProyectoConsola/node_modules/" />
@@ -33,33 +35,63 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="3" />
+          <entry key="db" value="2" />
+          <entry key="js" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="3" />
+          <entry key="JavaScript" value="5" />
+          <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="545" />
+          <entry key="js" value="686" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="545" />
+          <entry key="JavaScript" value="686" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/04-Backend/video-backend./api/controllers/ModelController.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/04-Backend/video-backend./api/controllers/RazaController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="673">
-              <caret line="54" column="3" lean-forward="true" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="3" />
+            <state relative-caret-position="180">
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/04-Backend/video-backend./config/routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/04-Backend/video-backend./.tmp/localDiskDb/raza.db">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/04-Backend/video-backend./.tmp/localDiskDb/archive.db">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/04-Backend/video-backend./config/datastores.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="477">
+              <caret line="53" column="4" lean-forward="true" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -127,6 +159,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/04-Backend/video-backend./api/controllers/RazaController.js" />
         <option value="$PROJECT_DIR$/04-Backend/video-backend./api/controllers/ModelController.js" />
+        <option value="$PROJECT_DIR$/04-Backend/video-backend./config/routes.js" />
+        <option value="$PROJECT_DIR$/04-Backend/video-backend./config/datastores.js" />
       </list>
     </option>
   </component>
@@ -251,10 +285,10 @@
       <path value="$PROJECT_DIR$/ProyectoConsola/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="1282" />
-    <option name="width" value="1278" />
-    <option name="height" value="1440" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="42" />
+    <option name="width" value="1258" />
+    <option name="height" value="1326" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -305,14 +339,6 @@
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="anasco-loor-cesar-washington" type="b2602c69:ProjectViewProjectNode" />
-              <item name="anasco-loor-cesar-washington" type="462c0819:PsiDirectoryNode" />
-              <item name="04-Backend" type="462c0819:PsiDirectoryNode" />
-              <item name="video-backend." type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -327,6 +353,9 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/04-Backend/video-backend./api/controllers" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/03-Angular" />
     </key>
@@ -395,7 +424,7 @@
       <workItem from="1544822271836" duration="6782000" />
       <workItem from="1544829510753" duration="846000" />
       <workItem from="1544878725320" duration="1020000" />
-      <workItem from="1545081679523" duration="3365000" />
+      <workItem from="1545081679523" duration="4755000" />
     </task>
     <task id="LOCAL-00001" summary="Crear git">
       <created>1538776651438</created>
@@ -414,13 +443,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5259000" />
+    <option name="totallyTimeSpent" value="6649000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1282" y="0" width="1278" height="1440" extended-state="0" />
+    <frame x="0" y="42" width="1258" height="1326" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19968179" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20291026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -432,7 +461,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32876712" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.40875912" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.45380875" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.3270073" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -515,10 +544,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/04-Backend/video-backend./api/controllers/ModelController.js">
+    <entry file="file://$PROJECT_DIR$/04-Backend/video-backend./.tmp/localDiskDb/raza.db">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04-Backend/video-backend./.tmp/localDiskDb/archive.db">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04-Backend/video-backend./api/controllers/RazaController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="54" column="3" lean-forward="true" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="3" />
+        <state relative-caret-position="180">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04-Backend/video-backend./config/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04-Backend/video-backend./config/datastores.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="53" column="4" lean-forward="true" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
         </state>
       </provider>
     </entry>

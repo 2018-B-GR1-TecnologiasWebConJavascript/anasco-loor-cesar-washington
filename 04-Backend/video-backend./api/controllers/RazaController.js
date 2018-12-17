@@ -8,14 +8,12 @@
 module.exports = {
   
 
-  /**
-   * `ModelController.Raza()`
-   */
-  Raza: async function (req, res) {
-    return res.json({
-      todo: 'Raza() is not implemented yet!'
-    });
+  holaMundo: function (peticion, respuesta) {
+
+    send
+
   }
+
 
 };
 
