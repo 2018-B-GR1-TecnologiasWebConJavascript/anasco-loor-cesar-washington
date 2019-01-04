@@ -13,7 +13,7 @@
  * https://sailsjs.com/config/datastores
  */
 
-module.exports.datastores = {
+module.exports.datastores = { 
 
 
   /***************************************************************************
@@ -48,8 +48,8 @@ module.exports.datastores = {
     *    (See https://sailsjs.com/config/datastores for help.)                 *
     *                                                                          *
     ***************************************************************************/
-    //adapter: 'sails-mysql',
-    //url: 'mysql://washo:clave@host:port/js',
+    adapter: 'sails-mysql',
+    url: 'mysql://adrian:1234@host:32773/js',
 
   },
 
