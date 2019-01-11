@@ -30,6 +30,17 @@ export class RazaRestService {
       .pipe(map(r => <Raza> r)); // Castear
   }
 
+  create(nombre: string): Observable<Raza>{
+
+    const objetoAGuardar: Raza = {
+      nombre: nombre
+    };
+
+    return this._httpClient
+      .post(environment.url + this.nombreModelo, objetoAGuardar)
+      .pipe(map(r => <Raza> r)); //Castear
+  }
+
 
 }
 
