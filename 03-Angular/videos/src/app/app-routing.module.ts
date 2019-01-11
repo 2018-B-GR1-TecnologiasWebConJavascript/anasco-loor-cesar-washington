@@ -8,7 +8,7 @@ import {Ruta404Component} from './rutas/ruta404/ruta404.component';
 import {RutaGestionUsuariosComponent} from './rutas/ruta-gestion-usuarios/ruta-gestion-usuarios.component';
 import {RutaGestionProductosComponent} from './rutas/ruta-gestion-productos/ruta-gestion-productos.component';
 import {RutaVerDetalleUsuarioComponent} from './rutas/ruta-ver-detalle-usuario/ruta-ver-detalle-usuario.component';
-import {RutaCrearRazaComponent} from "./rutas/ruta-crear-raza/ruta-crear-raza.component";
+import {RutaCrearRazaComponent} from './rutas/ruta-crear-raza/ruta-crear-raza.component';
 
 const routes: Routes = [
   {
@@ -37,6 +37,7 @@ const routes: Routes = [
         component: RutaGestionUsuariosComponent,
       },
       {
+        // menu/crear-raza
         path: 'crear-raza',
         component: RutaCrearRazaComponent,
       },
