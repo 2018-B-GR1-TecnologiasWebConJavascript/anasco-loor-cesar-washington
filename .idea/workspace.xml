@@ -29,7 +29,7 @@
     <session id="-738238934">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
@@ -298,10 +298,10 @@
       <path value="$PROJECT_DIR$/ProyectoConsola/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="1282" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1278" />
-    <option name="height" value="1440" />
+    <option name="height" value="1345" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -493,7 +493,7 @@
       <workItem from="1546636495147" duration="668000" />
       <workItem from="1546637195785" duration="4016000" />
       <workItem from="1546894999065" duration="5910000" />
-      <workItem from="1547241341125" duration="4553000" />
+      <workItem from="1547241341125" duration="4663000" />
     </task>
     <task id="LOCAL-00001" summary="Crear git">
       <created>1538776651438</created>
@@ -512,13 +512,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21990000" />
+    <option name="totallyTimeSpent" value="22100000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1281" y="0" width="1279" height="1440" extended-state="6" />
+    <frame x="0" y="23" width="1278" height="1345" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.40063593" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.40095466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -530,7 +530,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32876712" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.40875912" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.44692737" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.3270073" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />

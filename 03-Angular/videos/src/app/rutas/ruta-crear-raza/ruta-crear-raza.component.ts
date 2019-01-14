@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import {RazaRestService} from "../../servicios/rest/raza-rest.service";
-import {Raza} from "../../interfaces/raza";
-import {NgForm} from "@angular/forms";
+import {Component, OnInit} from '@angular/core';
+import {RazaRestService} from '../../servicios/rest/raza-rest.service';
+import {Raza} from '../../interfaces/raza';
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-ruta-crear-raza',
@@ -10,45 +10,57 @@ import {NgForm} from "@angular/forms";
 })
 export class RutaCrearRazaComponent implements OnInit {
 
-  raza:RazaEjemplo = {
-    nombre: '',
+  raza: RazaEjemplo = {
+    nombre: '123123123123',
     apellido: ''
   };
 
-  constructor(private readonly _razaRestService:RazaRestService) { }
+  constructor(private readonly _razaRestService: RazaRestService) {
+  }
 
   ngOnInit() {
   }
 
   crearRaza(formulario: NgForm) {
 
-    console.log('formulario:', formulario);
+    console.log('Formulario: ', formulario);
 
-  const crearRaza$ = this._razaRestService
-    .create(this.raza.nombre)
+
+    const crearRaza$ = this._razaRestService
+      .create(<string> this.raza.nombre);
 
     crearRaza$
-      .suscribe(
-        (raza:Raza)=>{
+      .subscribe(
+        (raza: Raza) => {
           console.log('Raza');
           alert(`Raza creada: ${raza.nombre}`);
         },
-        (error)=>{
-          console.error('Error: ',error);
+        (error) => {
+          console.error('Error: ', error);
         }
       );
+
   }
 
 
-
-  mostrarEnConsola (objeto) {
+  mostrarEnConsola(objeto) {
     console.log(objeto);
     console.log(objeto.value);
   }
 
 }
 
+
 interface RazaEjemplo {
-  nombre: string,
-  apellido: string
+  nombre: string | number;
+  apellido: string;
 }
+
+
+
+
+
+
+
+
+
