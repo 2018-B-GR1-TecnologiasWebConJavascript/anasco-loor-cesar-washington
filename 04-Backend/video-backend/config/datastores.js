@@ -31,11 +31,11 @@ module.exports.datastores = {
   * (For production configuration, see `config/env/production.js`.)          *
   *                                                                          *
   ***************************************************************************/
-  /*
+
   default: {
     adapter: 'sails-mysql',
     url: 'mysql://adrian:12345678@localhost:32777/js',
   },
-  */
+
 
 };

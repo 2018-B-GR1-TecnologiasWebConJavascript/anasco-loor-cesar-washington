@@ -25,21 +25,28 @@ export class RutaCrearRazaComponent implements OnInit {
 
     console.log('Formulario: ', formulario);
 
+    // Validar
 
-    const crearRaza$ = this._razaRestService
-      .create(<string> this.raza.nombre);
+    if (this.nombreContieneA(this.raza.nombre.toString())) {
+      const crearRaza$ = this._razaRestService
+        .create(<string> this.raza.nombre);
+      crearRaza$
+        .subscribe(
+          (raza: Raza) => {
+            console.log('Raza');
+            alert(`Raza creada: ${raza.nombre}`);
+          },
+          (error) => {
+            console.error('Error: ', error);
+          }
+        );
+    } else {
+      alert('ERROR, No contiene una letra A');
+    }
+  }
 
-    crearRaza$
-      .subscribe(
-        (raza: Raza) => {
-          console.log('Raza');
-          alert(`Raza creada: ${raza.nombre}`);
-        },
-        (error) => {
-          console.error('Error: ', error);
-        }
-      );
-
+  nombreContieneA(nombre: string): boolean {
+    return nombre.toLowerCase().includes('a');
   }
 
 

@@ -16,6 +16,8 @@ import {HttpClientModule} from '@angular/common/http';
 import {RazaRestService} from './servicios/rest/raza-rest.service';
 import { RutaCrearRazaComponent } from './rutas/ruta-crear-raza/ruta-crear-raza.component';
 import {FormsModule} from '@angular/forms';
+import { RutaActualizarRazaComponent } from './rutas/ruta-actualizar-raza/ruta-actualizar-raza.component';
+import { ImagenPeliculaComponent } from './componentes/imagen-pelicula/imagen-pelicula.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import {FormsModule} from '@angular/forms';
     RutaGestionUsuariosComponent,
     RutaGestionProductosComponent,
     RutaVerDetalleUsuarioComponent,
-    RutaCrearRazaComponent
+    RutaCrearRazaComponent,
+    RutaActualizarRazaComponent,
+    ImagenPeliculaComponent
   ],  // Components
   imports: [
     BrowserModule,
