@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {UsuarioServiceService} from '../../servicios/usuario-service.service';
+import {RazaRestService} from '../../servicios/rest/raza-rest.service';
+import {Raza} from '../../interfaces/raza';
 
 @Component({
   selector: 'app-ruta-gestion-usuarios',
@@ -7,42 +10,57 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RutaGestionUsuariosComponent implements OnInit {
 
-  usuarios: Usuario[] = [
-    {
-      id: 1,
-      nombre: 'washo'
-    },
-    {
-      id: 2,
-      nombre: 'cesarf'
-    }
-  ];
+  usuarios = [];
 
-  constructor() { }
+  // Inyeccion de Dependencias
+  constructor(
+    private readonly _razaRestService: RazaRestService
+  ) {
+
+  }
 
   ngOnInit() {
-  }
+    // CUANDO ESTA LISTO EL WEB COMPONENT PARA MOSTRARSE
+    const razas$ = this._razaRestService.findAll();
 
-  hola() {
-    return 'Hola';
-  }
-
-  imprimir(usuario: Usuario) {
-    console.log(usuario);
-
-    const indiceUsuariosAEliminar = this.usuarios
-      .findIndex(
-        (usuarioABuscar)=>{
-          return usuarioABuscar.id == usuario.id
+    razas$
+      .subscribe(
+        (razas: Raza[]) => {
+          console.log(razas);
+          this.usuarios = razas;
+        },
+        (error) => {
+          console.error('Error', error);
         }
       );
-    this.usuarios.splice(indiceUsuariosAEliminar, 1)
+  }
+
+
+  eliminar(raza: Raza) {
+
+    const razaEliminada$ = this._razaRestService.delete(raza.id);
+
+    razaEliminada$
+      .subscribe(
+        (razaEliminada: Raza) => {
+          console.log('Se elimino:', razaEliminada);
+
+          const indice = this.usuarios
+            .findIndex((r) => r.id === raza.id);
+
+          this.usuarios.splice(indice, 1);
+
+
+        },
+        (error) => {
+          console.error('Error', error);
+        }
+      );
+
 
   }
 
 }
 
-interface Usuario {
-  nombre?: string;
-  id?: number;
-}
+
+

@@ -20478,9 +20478,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="1282" />
-    <option name="width" value="1278" />
-    <option name="height" value="1440" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -20544,7 +20543,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="01-variables.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="01-variables.js" working-dir="$PROJECT_DIR$/01-JavaScript">
+    <configuration name="01-variables.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="01-variables.js" working-dir="$PROJECT_DIR$/01-JavaScript">
       <method v="2" />
     </configuration>
     <recent_temporary>
